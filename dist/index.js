@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useState } from 'react';
 
-const Button = ({ children }) => {
-    return (React.createElement("button", { style: {
+const Button = ({ children, onClick }) => {
+    return (React.createElement("button", { onClick: onClick, style: {
             padding: "10px 20px",
             fontSize: "1.2em",
             borderRadius: "5px",
